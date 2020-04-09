@@ -1,4 +1,6 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet,Dimensions  } from 'react-native'
+
+const devH = Dimensions.get('screen').height;
 
 export default StyleSheet.create({
   container: {
@@ -6,7 +8,7 @@ export default StyleSheet.create({
     backgroundColor: '#003f5c',
     alignItems: 'center',
     justifyContent: 'center',
-    height: "45%",
+    height: devH/2
   },
   inputView: {
     width: "80%",
@@ -42,7 +44,4 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  backMainScreen:{
-    backgroundColor: "black",
-  }
 })

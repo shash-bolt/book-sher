@@ -1,28 +1,28 @@
-import { StyleSheet,Dimensions  } from 'react-native'
+import { StyleSheet, Dimensions } from 'react-native'
 
 const devH = Dimensions.get('screen').height;
 
 export default StyleSheet.create({
   container: {
-
-    backgroundColor: '#7178a3',
+    
+    backgroundColor: '#a0a195',
     alignItems: 'center',
     justifyContent: "center",         
-    height: devH/5
+    height: devH/6
+
   },
-  registerBtn: {
+  GuestBtn: {
     width: "80%",
-    backgroundColor: "#a5d4d9",
+    backgroundColor: "#97b04d",
     borderRadius: 25,
     height: 50,
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 10,
-    marginBottom: 10
+
   },
-  registerText: {
+  GuestText: {
    
-    color: "#112bbf",
+    color: "#4c523b",
     alignItems: "center",
     justifyContent: "center",
     fontSize: 18,

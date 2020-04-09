@@ -2,17 +2,16 @@ import React from 'react';
 import {  Text,  View, TouchableOpacity } from 'react-native';
 
 
-import styles from '../Styles/NewUserLoginStyle'
+import styles from '../Styles/ContinueGuestCompStyle'
 
-export default function NewUserLoginComp() {
+export default function ContinueGuestComp() {
     
     return (
 
         <View style={styles.container}>
-
            
-            <TouchableOpacity style={styles.registerBtn}>
-                <Text style={styles.registerText}>New Registration</Text>
+            <TouchableOpacity style={styles.GuestBtn}>
+                <Text style={styles.GuestText}>Continue as Guest</Text>
             </TouchableOpacity>
 
             </View>
