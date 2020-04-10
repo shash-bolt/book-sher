@@ -2,11 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import Login from './screens/Login' 
+import RegistrationPage from './screens/RegistrationPage'
+
 
 export default function App() {
   return (
     <View>
-      <Login/>      
+     <RegistrationPage/>
     </View>
   );
 }

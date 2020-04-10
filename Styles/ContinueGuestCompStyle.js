@@ -4,12 +4,11 @@ const devH = Dimensions.get('screen').height;
 
 export default StyleSheet.create({
   container: {
-    
     backgroundColor: '#a0a195',
     alignItems: 'center',
-    justifyContent: "center",         
-    height: devH/6
-
+    justifyContent: "center",
+    height: devH/6         
+    
   },
   GuestBtn: {
     width: "80%",
