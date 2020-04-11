@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Login from './screens/Login' 
 import RegistrationPage from './screens/RegistrationPage'
+import UserLanding from './screens/UserLanding';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ export default function App() {
       >
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Registration" component={RegistrationPage} />
+        <Stack.Screen name="UserLanding" component={UserLanding} />
       </Stack.Navigator>
     </NavigationContainer>
 

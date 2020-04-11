@@ -3,7 +3,7 @@ import { StyleSheet, Text, TextInput, View, TouchableOpacity } from 'react-nativ
 
 import styles from '../Styles/LoginStyle'
 
-export default function LoginComp() {
+export default function LoginComp(props) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -28,7 +28,7 @@ export default function LoginComp() {
                     placeholderTextColor="#003f5c"
                     onChangeText={text => setPassword({ password: text })} />
             </View>
-            <TouchableOpacity style={styles.loginBtn}>
+            <TouchableOpacity style={styles.loginBtn} onPress={props.setNav}>
                 <Text style={styles.loginText}>ENTER</Text>
             </TouchableOpacity>
 

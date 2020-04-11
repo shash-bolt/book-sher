@@ -7,6 +7,7 @@ import HeaderComp from '../components/HeaderComp'
 import LoginComp from '../components/LoginComp'
 import NewUserLoginComp from '../components/NewUserLoginComp'
 import ContinueGuestComp from '../components/ContinueGuestComp'
+
 export default function Login() {
     
     const navigation = useNavigation();
@@ -14,10 +15,10 @@ export default function Login() {
     return (
         <View>
             <LoginModalComp/>
-            <HeaderComp />
-            <LoginComp/>
+            <HeaderComp/>
+            <LoginComp setNav ={()=>navigation.navigate('UserLanding',{VerifiedUser: true})}/>
             <NewUserLoginComp  setNav ={()=>navigation.navigate('Registration')}/>
-            <ContinueGuestComp/>
+            <ContinueGuestComp setNav ={()=>navigation.navigate('UserLanding',{VerifiedUser: false})}/>
         </View>
 
     )
